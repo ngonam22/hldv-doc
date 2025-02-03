@@ -4,11 +4,19 @@ on:
   push:
     branches: [main]
 
+# Add permissions here
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -22,7 +30,5 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+        id: deployment
+        uses: actions/deploy-pages@v4
