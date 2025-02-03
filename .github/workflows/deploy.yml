@@ -12,15 +12,12 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false  # Crucial for authentication
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -38,8 +35,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages  # Explicitly specify branch
           publish_dir: ./build
-          force_orphan: true  # Force push to gh-pages
-          enable_jekyll: false  # Important for SPA routing
-          # Uncomment if using project site:
-          # cname: your-domain.com
+          force_orphan: true  # Clean existing files
+          keep_files: false   # Remove previous build files
