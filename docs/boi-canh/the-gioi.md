@@ -1,6 +1,7 @@
 ---
 title: Thế giới
 sidebar_position: 1
+description: Giới thiệu về Lục địa Huyền Việt
 ---
 
 Trò chơi **Đại Việt Hắc Thế** lấy một bối cảnh của thế giới tưởng tượng cổ đại huyền ảo ở lục địa
