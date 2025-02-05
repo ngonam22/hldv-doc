@@ -6,8 +6,8 @@ description: Giới thiệu các yếu tố Ngũ Hành chủ đạo của Trò c
 
 > *Từ thuở khai thiên lập địa, khi loài người mở ra linh trí và phát triển văn minh, họ đã không ngừng tìm
 hiểu thế giới rộng lớn bên ngoài, cũng như thế giới nội tâm bên trong. Các trí giả qua nhiều thời
-đại đã đúc kết nên một lý thuyết được công nhận rộng rãi tới thời điểm hiện tại. Đó là Thuyết
-Ngũ Hành, Ngũ Hành thể hiện năm khái niệm cơ bản có thể áp dụng cho hầu hết các quy luật
+đại đã đúc kết nên một lý thuyết được công nhận rộng rãi tới thời điểm hiện tại. Với tên gọi **“Thuyết
+Ngũ Hành”**, thuyết này thể hiện năm khái niệm cơ bản có thể áp dụng cho hầu hết các quy luật
 tự nhiên cũng như tâm linh của trời, đất và con người - Thiên Địa Nhân - Tam Bảo của Tạo
 Hóa.*
 >
