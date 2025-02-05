@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Daybreaker;
+    src: url('/static/font/Daybreaker.ttf') format('truetype');
+  }
+
+.docs-wrapper {
+    article {
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Daybreaker;
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        header {
+            h1 {
+                position: relative;
+                line-height: calc(var(--ifm-heading-line-height) + 10px); 
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -6px; left: 0;
+                    background-image: linear-gradient(
+                        45deg,
+                        hsl(44deg 43% 54%) 0%,
+                        hsl(44deg 43% 52%) 5%,
+                        hsl(43deg 43% 50%) 10%,
+                        hsl(43deg 45% 49%) 16%,
+                        hsl(43deg 47% 47%) 23%,
+                        hsl(43deg 50% 45%) 32%,
+                        hsl(43deg 53% 44%) 44%,
+                        hsl(43deg 57% 42%) 70%,
+                        hsl(43deg 61% 40%) 87%,
+                        hsl(43deg 65% 39%) 93%,
+                        hsl(43deg 71% 37%) 96%,
+                        hsl(43deg 77% 35%) 98%,
+                        hsl(44deg 87% 33%) 100%
+                    );
+                    width: 10px; height: 10px;
+                    transform: rotate(45deg);
+                    border: 2px solid #9b740b;
+                }
+                &::after {
+                    content: var(--header-after-content, var(--h2-after-content, ""));
+                    background-color: #d1a347;
+                    display: block;
+                    width: 100%;
+                    margin: 5px auto 20px;
+                    height: var(--header-border-height, var(--h2-border-height, 2px));
+                }
+            }
+        }
+    }
+}
