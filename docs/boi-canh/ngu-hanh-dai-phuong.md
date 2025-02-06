@@ -22,6 +22,7 @@ Thay vì những chỉ số vật lý căn bản thể hiện năng lực thể 
 Huyền Việt sử dụng 5 yếu tố Ngũ Hành để thể hiện năm hướng chủ đạo của nhân vật khi tiếp cận một vấn đề (gọi là Hành Phương). Vì sau cùng, hành động của nhân vật mới là thứ thúc đẩy trò chơi và câu chuyện. 
 Để tiện việc thông hiểu cũng như ghi nhớ. Mỗi Hành Phương có thể được tóm gọn lại trong một chữ, và có thể được mở rộng ý nghĩ tùy vào hoàn cảnh, như sau.
 
+
 - **Hỏa Hành (Bạo)**: tính táo bạo, nóng nảy, liều lĩnh và áo đảo.
 
 - **Thổ Hành (Kiên)**: tính kiên trì, nhẫn nại, kiên định, ngoan cố.
@@ -68,7 +69,7 @@ hiện một hoạt động nào đó, họ chọn một hành làm phương hư
 yếu phụ thuộc vào hoàn cảnh.
 
 
-### Hỏa Hành
+###  <img src={require('/img/icons/fire.png').default} width="30" style={{verticalAlign: 'middle'}} /> Hỏa Hành
 Hỏa hành đại diện cho năng lượng có hướng phát tán xung quanh, như ánh nắng ấm áp của mặt trời hay sự hủy diệt của hỏa diệm, cũng như sự thông minh, đam mê và sáng tạo của linh
 hồn. Ở Đại Việt, Hỏa hành còn đại diện cho đức Lễ là sự tôn trọng, đối xử hòa nhã với người
 khác.

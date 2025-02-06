@@ -1,7 +1,33 @@
 @font-face {
     font-family: Daybreaker;
     src: url('/static/font/Daybreaker.ttf') format('truetype');
-  }
+}
+
+:root {
+    --mexican-red-50: #fef2f2;
+    --mexican-red-100: #fee2e2;
+    --mexican-red-200: #fecaca;
+    --mexican-red-300: #fca5a5;
+    --mexican-red-400: #f87171;
+    --mexican-red-500: #ef4444;
+    --mexican-red-600: #dc2626;
+    --mexican-red-700: #b91c1c;
+    --mexican-red-800: #a31d1d;
+    --mexican-red-900: #7f1d1d;
+    --mexican-red-950: #450a0a;
+
+    --beige-50: #fbf8f1;
+    --beige-100: #f5eedf;
+    --beige-200: #e5d0ac;
+    --beige-300: #ddc094;
+    --beige-400: #cfa068;
+    --beige-500: #c4894b;
+    --beige-600: #b67340;
+    --beige-700: #985c36;
+    --beige-800: #7a4b32;
+    --beige-900: #633e2b;
+    --beige-950: #351f15;
+}
 
 .docs-wrapper {
     article {
@@ -86,6 +112,62 @@
                 font-weight: bold;
                 text-align: right;
             }
+        }
+    }
+}
+.tabs-container {
+    
+    // border-left: 1px solid var(--beige-600);
+    position: relative;
+    border-radius: 15px 0 10px 10px;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(182,115,64,1) 100%);
+    padding-left: 1px;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        width: 101%;
+        height: 100%;
+        border-radius: 15px 15px 10px 10px;
+        background: var(--ifm-background-color);
+    }
+    
+    .tabs {
+        position: relative;
+        border-radius: 15px 15px 0 0;
+        border-top: 1px solid rgba(182,115,64,1);
+        display: inline-block;
+        // background: var(--ifm-background-color);
+        
+        z-index: 1;
+
+        &__item {
+            padding: 10px calc(var(--ifm-tabs-padding-horizontal) * 2);
+            border-radius: 0;
+            border: 0 !important;
+
+            &--active {
+                background: var(--beige-400);
+                color: black;
+                text-shadow: 0 0 1px var(--beige-100);
+                background: linear-gradient(90deg, var(--beige-400) 0%, var(--beige-600) 100%);
+            }
+        }
+    }
+
+    > div {
+        position: relative;
+        border-radius: 10px;
+        padding: 1px;
+        background: linear-gradient(125deg, rgba(255,255,255,0) 0%, rgba(182,115,64,1) 100%);;
+
+        [role=tabpanel] {
+            background: var(--ifm-background-color);
+            border-radius: 0 10px 35px 10px;
+            padding: 15px;
         }
     }
 }
