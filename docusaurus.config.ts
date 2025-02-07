@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'HLDV Tài Liệu',
-  tagline: 'HLDV Tài Liệu',
+  title: 'HVDL Tài Liệu',
+  tagline: 'HVDL Tài Liệu',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -109,7 +109,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Hướng Dẫn',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         // {

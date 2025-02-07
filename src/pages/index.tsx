@@ -16,12 +16,12 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">Trang thông tin về Game Huyền Việt Đại Lục</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/loi-noi-dau">
+            Vào Trang Hướng Dẫn
           </Link>
         </div>
       </div>
