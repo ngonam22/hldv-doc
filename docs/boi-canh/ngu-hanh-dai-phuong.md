@@ -69,32 +69,32 @@ hiện một hoạt động nào đó, họ chọn một hành làm phương hư
 yếu phụ thuộc vào hoàn cảnh.
 
 
-###  <img src={require('/img/icons/fire.png').default} width="30" style={{verticalAlign: 'middle'}} /> Hỏa Hành
-Hỏa hành đại diện cho năng lượng có hướng phát tán xung quanh, như ánh nắng ấm áp của mặt trời hay sự hủy diệt của hỏa diệm, cũng như sự thông minh, đam mê và sáng tạo của linh
+###  <HoaHanhColor><img src={require('/img/icons/fire.png').default} width="30" style={{verticalAlign: 'middle'}} /> Hỏa Hành</HoaHanhColor>
+<HoaHanhColor gradient="false">Hỏa hành</HoaHanhColor> đại diện cho năng lượng có hướng phát tán xung quanh, như ánh nắng ấm áp của mặt trời hay sự hủy diệt của hỏa diệm, cũng như sự thông minh, đam mê và sáng tạo của linh
 hồn. Ở Đại Việt, Hỏa hành còn đại diện cho đức Lễ là sự tôn trọng, đối xử hòa nhã với người
 khác.
 
-### Thổ Hành
-**Thổ hành** đại diện cho năng lượng bao quát, chứa đựng, là khung sườn vững chắc của tạo
+### <ThoHanhColor>Thổ Hành</ThoHanhColor>
+<ThoHanhColor gradient="false">Thổ hành</ThoHanhColor> đại diện cho năng lượng bao quát, chứa đựng, là khung sồn vững chắc của tạo
 hóa, là môi trường để vạn vật sinh sôi nảy nở. Thổ hành tương ứng với kỷ cương vững chắc
 mà xã hội văn minh được xây dựng lên, là cái luân lý vận hành của xã tắc cũng như sự hy sinh
 vì lợi ích chung của cộng đồng - giống như đất vậy, bao dung và cung ứng cho vạn vật. Ở Đại
 Việt, Thổ hành còn đại diện cho đức Tín, chính là sự tuân thủ lời hứa, tôn trọng sự thật cũng
 như lề luật của quốc gia.
 
-### Kim Hành
-Kim hành đại diện cho năng lượng cứng cáp, thu liễm, ẩn tàng và tích tụ, là thành quả tinh chất
+### <KimHanhColor>Kim Hành</KimHanhColor>
+<KimHanhColor gradient="false">Kim hành</KimHanhColor> đại diện cho năng lượng cứng cáp, thu liễm, ẩn tàng và tích tụ, là thành quả tinh chất
 của mọi sự vận động. Kim hành tương ứng với sự phát triển văn minh, tính thực tế thực dụng
 và khả năng công hiệu hóa lý lẽ học thuyết thành thực tế. Ở Đại Việt, Kim hành còn đại diện
 cho đức Nghĩa, chính là sự đối xử công bình chính nghĩa giữa người với người.
 
-### Thủy Hành
-Thủy hành đại diện cho năng lượng trầm lắng, hướng xuống, trở về cội nguồn mà phản ánh
+### <ThuyHanhColor>Thủy Hành</ThuyHanhColor>
+<ThuyHanhColor gradient="false">Thủy hành</ThuyHanhColor> đại diện cho năng lượng trầm lắng, hướng xuống, trở về cội nguồn mà phản ánh
 thế giới tâm linh siêu tự nhiên luôn tồn tại một cách mơ hồ, nhưng lại luôn ảnh hưởng đến thế
 giới vật chất của Huyền Việt. Ở Đại Việt, Thủy hành còn đại diện cho đức Trí, chính là trí tuệ, và
 sự thông hiểu các quy luật của trời, đất, con người cũng như các quy luật của tự nhiên.
 
-### Mộc Hành
-Mộc hành đại diện cho năng lượng thăng hoa, biến hóa và phóng đại. Mộc hành tương ứng với
+### <MocHanhColor>Mộc Hành</MocHanhColor>
+<MocHanhColor gradient="false">Mộc hành</MocHanhColor> đại diện cho năng lượng thăng hoa, biến hóa và phóng đại. Mộc hành tương ứng với
 sự phát triển của vạn vật, sự sinh sôi nảy nở của thiên nhiên và sinh vật cũng như tính nhân
-văn của loài người. Ở Đại Việt, Mộc h
+văn của loài người. Ở Đại Việt, Mộc hành còn đại diện cho đức Mỹ, chính là sự thực tế, sự thực tế, sự thực tế.
