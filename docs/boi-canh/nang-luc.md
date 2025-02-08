@@ -9,12 +9,17 @@ Có tất cả 5 kỹ năng chính và có nguồn gốc từ [Ngũ Hành](/boi-
 <div style={{display: "flex", gap: "25px", justifyContent: "center"}}>
     <div style={{textAlign: "center"}}>
         <img src={require('/img/icons/strength-ability.png').default}  width="100" alt="Sức mạnh icon" />
-        <div>Sức lực</div>
+        <div>Sức Lực</div>
     </div>
 
     <div style={{textAlign: "center"}}>
         <img src={require('/img/icons/willpower-ability.png').default}  width="100" alt="Tâm lực icon" />
-        <div>Tâm lực</div>
+        <div>Tâm Lực</div>
+    </div>
+
+    <div style={{textAlign: "center"}}>
+        <img src={require('/img/icons/concentration-ability.png').default}  width="100" alt="Chú tâm icon" />
+        <div>Chú Tâm</div>
     </div>
 </div>
 
