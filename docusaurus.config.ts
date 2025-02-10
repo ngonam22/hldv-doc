@@ -88,6 +88,7 @@ const config: Config = {
         theme: {
           customCss: [
             './src/css/custom.css',
+            './src/css/timeline.css',
             './src/css/v1-theme.scss'
           ],
         },

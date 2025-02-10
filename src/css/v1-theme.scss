@@ -147,6 +147,16 @@
                 text-align: right;
             }
         }
+
+        table {
+            display: table !important;
+            width: 100%;
+            border: 1px solid var(--beige-600);
+
+            tr {
+                border: 0;
+            }
+        }
     }
 }
 .tabs-container {

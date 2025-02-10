@@ -1,0 +1,32 @@
+.timeline {
+    position: relative;
+    border-color: var(--gray-700);
+    border-inline-start-style: solid;
+    border-inline-start-width: 1px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.timeline ul {
+    padding: 0;
+}
+.timeline li {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.timeline_icon, .timeline svg {
+    position: absolute;
+    width: 15px; height: 15px;
+    margin-top: 6px;
+    background: var(--ifm-background-color);
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    inset-inline-start: -8px;
+}
+.timeline_time {
+    color: blue;
+    line-height: 1;
+    margin-bottom: 5px;
+}

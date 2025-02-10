@@ -41,23 +41,14 @@ diện cho Năm tính chất của Khí, chúng không bao giờ tồn tại đ�
 ## Cấp Bậc
 Mỗi Hành được phân chia thành 5 cấp bậc, thể hiện thiên tư khi tiếp cận vấn đề sử dụng Hành phương của Hành đó:
 
-- **Bậc-1: Khiếm Khuyết**
-<div>Yếu kém với hành phương này, cá thể khiếm khuyết thường sử dụng Hành phương khác để tiếp cận vấn đề.</div>
-
-- **Bậc-2: Trung Bình**
-<div>Ngang bình với mặt bằng chung, không quá giỏi, không quá tệ. Có thể tự thân làm việc đơn giản.</div>
-
-- **Bậc-3: Xuất Sắc**
-<div>Trên mức trung bình, là hạt giống anh tài. Thường gây chú ý  khi họ phát huy Hành phương này.</div>
-
-- **Bậc-4: Kiệt Xuất**
-<div>Tinh anh kiệt xuất khi hoạt động trong lĩnh vực của Hành phương này, thường khiến người khác ấn tượng và nể phục.</div>
-
-- **Bậc-5: Đỉnh Phong**
-<div>Đỉnh điểm của nhân sinh, là rồng phượng trong loài người, cũng như thiên tài hiếm có. Người khác coi họ là đại biểu hoàn hảo trong hoạt động lĩnh vực của Hành phương này.</div>
-
-- **Bậc-6+: Siêu Nhiên**
-<div>Khả năng vượt khỏi giới hạn của con người. Chỉ những cá thể siêu tự nhiên mới có thể đạt cấp bậc này hoặc cao hơn.</div>
+| Cấp Bậc | Tóm Tắt | Ý Nghĩa     |
+|--------|-------------|---|
+| 1      | Khiếm Khuyết | Nhân vật được cho là yếu kém và khiếm khuyết với các lĩnh vực hoạt động và phương pháp làm việc liên quan đến Hành này. Cá thể có hành cấp bậc này thường sẽ có thiên hướng lựa chọn những hành phương khác khi giải quyết vấn đề hoặc cần sự hỗ trợ nhất định từ người khác với hành phương này. |
+| 2      | Trung Bình  | Nhân vật được cho là trung bình với các lĩnh vực hoạt động của hành phương này. Cá thể có hành cấp bậc này có thể tự thân làm những việc đơn giản. Tuy nhiên không quá xuất sắc mà cũng không quá tệ. |
+| 3      | Xuất Sắc  | Nhân vật có hành cấp bậc này được cho là trên mức trung bình, là hạt giống anh tài với các lĩnh vực hoạt động của hành phương này. Họ thường sẽ gây chú ý cho người xung quanh khi thành công thực hiện hành phương này. |
+| 4      | Kiệt Xuất         | Nhân vật có hành cấp bậc này được cho là tinh anh kiệt xuất trong lĩnh vực hoạt động của hành phương này. Việc họ đạt được đều khiến người khác kinh ngạc và có ấn tượng đáng kể. |
+| 5      | Đỉnh Phong     | Hành cấp bậc này được coi là đỉnh điểm của nhân sinh. Nhân vật có hành cấp bậc này là rồng giữa loài người, là cũng thiên tài hiếm có. Người khác coi phương thức làm việc của họ là đại biểu hoàn hảo của hành phương này. |
+| 6+     | Siêu Nhiên  | Khả năng vượt khỏi giới hạn của con người. Chỉ những cá thể siêu tự nhiên mới có thể đạt cấp bậc này hoặc cao hơn.|
 
 
 ## Tương Tác

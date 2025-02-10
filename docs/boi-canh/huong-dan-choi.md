@@ -36,7 +36,7 @@ bằng của tinh thần, đẩy tâm thức gần hơn về cục diện rối 
 
 ## Vận Dụng Kỹ Năng
 Khi nhân vật muốn thực hiện một việc mà khả năng thành công chưa được chắc chắn. Quản 
-Trò (QT) sẽ đề nghị người chơi thực hiện một bài kiểm tra năng lực bằng cách gieo xúc xắc. 
+Trò (QT) sẽ đề nghị người chơi thực hiện một bài kiểm tra năng lực bằng cách gieo xúc xắc. Và Quản trò sẽ dựa vào kết quả cuối cùng từ các xúc xắc được gieo để xác định kết quả của hành động của người chơi.
 
 Bài kiểm tra năng lực, gọi tắt là xét năng lực (hay Xét), này gồm có hai phần: số lượng xúc xắc 
 và Độ Khó:
@@ -54,3 +54,83 @@ mức Độ Khó được tính là chí bại với hiệu ứng tiêu cực x�
 ```
 VD: Một kiếm sĩ tấn công áp đảo với Hỏa Hành cấp-3, và Võ Thuật cấp-2 sẽ gieo 5 xúc xắc d10 (gọi tắt là 5d10)
 ```
+
+<ol class="timeline">
+
+  <li>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+    </svg>
+    #### Bước 1
+    - Xác định tính khả thi và Độ Khó của bài xét năng lực. Thường được thể hiện bằng là số lượng điểm Âm hoặc Dương cần thiết.
+    - Mặc định của Trò Chơi sẽ dùng điểm Dương vì nó biểu hiện sự vận động cũng như lực lượng chủ chốt của sự sống so với điểm Âm.
+  </li>
+  <li>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+    </svg>
+    #### Bước 2
+    - Xác định Kỹ năng và Hành phương cần thiết bài xét năng lực. Với tổng số xúc xắc d10 cơ bản bằng với tổng cấp bậc của Kỹ năng và Hành phương đó.
+    - Áp dụng các cơ chế thêm giảm xúc xắc hoặc điều chỉnh giá trị xúc xắc (nếu có)
+  </li>
+  <li>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+    </svg>
+    #### Bước 3
+    - Gieo xúc xắc và xác định kết quả điểm Âm và Dương dựa trên kết quả giá trị của xúc xắc được gieo.
+    - Áp dụng các cơ chế thay đổi kết quả giá trị của xúc xắc (nếu có).
+    - Ở bước này, nhân vật có thể tiêu hao một lượng điểm Tâm Lực (tối đa bằng cấp bậc Hành phương) tương đương để thay đổi giá trị xúc xắc kết quả Thái Cực thành Thiếu Âm hoặc Thiếu Dương
+  </li>
+  <li>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+    </svg>
+    #### Bước 4
+    - Áp dụng kết quả bài xét
+    - Kết quả thành công nếu số lượng giá trị Âm Dương thỏa mãn Độ Khó của bài xét. Nhân vật thành công thực hiện hành động của mình.
+    - Kết quả thất bại nếu số lượng giá trị Âm Dương không thỏa mãn Độ Khó của bài xét. Nhân vật thất bại hành động của mình.
+  </li>
+  <li>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+    </svg>
+    #### Bước 5
+    - Số lượng giá trị dư (Âm, Dương, Thái Cực) có thể được sử dụng cho những hiệu ứng hợp lệ khác (nếu có) được kích hoạt bởi bài xét năng lực.
+  </li>
+</ol>
