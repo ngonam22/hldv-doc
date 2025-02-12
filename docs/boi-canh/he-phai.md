@@ -4,7 +4,7 @@ sidebar_position: 5
 ---
 
 ## Võ Sĩ
-<img src={require('/img/illustration/fighters-practice.png').default}  width="840" height="500" alt="Hình minh họa Võ Sĩ" />
+<img className="compendinum-img" src={require('/img/illustration/fighters-practice.png').default}  width="840" height="500" alt="Hình minh họa Võ Sĩ" />
 
 Với lịch sử đầy ắp chiến tranh cùng với môi trường tồn tại luôn có nguy hiểm rình rập thì thật không khó để đoán được võ thuật rất được tôn trọng trong xã hội Đại Việt. Đặc biệt là trong giới binh gia và võ lâm. 
 
