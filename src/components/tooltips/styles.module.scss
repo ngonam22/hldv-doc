@@ -1,0 +1,32 @@
+/* styles.module.scss */
+.tooltipHolder {
+    background: #1a1a1a url('/img/illustration/tooltip/buried.png') top left repeat;
+    background-size: 100%;
+    padding: 45px 30px;
+    border: 1px solid #EECC73;
+    min-height: 150px;
+    max-width: 550px;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #EECC73;
+        text-align: center;
+        letter-spacing: 1.5px;
+
+        & + hr {
+            margin-top: -10px;
+        }
+    }
+}
+.tooltipBg {
+    position: absolute;
+    width: 104%;
+    height: 104%;
+    left: -1.95%; top: -2%;
+    background: transparent url('/img/illustration/tooltip/border.svg') top left no-repeat;
+    background-size: 100% 100%;
+    background-position: 0;
+}
+.tooltipContent {
+    position: relative;
+    z-index: 999;
+}
