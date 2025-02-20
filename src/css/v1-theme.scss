@@ -1,6 +1,10 @@
+// @font-face {
+//     font-family: Daybreaker;
+//     src: url('/static/font/Daybreaker.ttf') format('truetype');
+// }
 @font-face {
-    font-family: Daybreaker;
-    src: url('/static/font/Daybreaker.ttf') format('truetype');
+    font-family: FzTogether;
+    src: url('/static/font/FzQuaffingTogether.otf') format('truetype');
 }
 
 
@@ -80,7 +84,7 @@
         header {
             h1 {
                 position: relative;
-                line-height: calc(var(--ifm-heading-line-height) + 10px); 
+                line-height: calc(var(--ifm-heading-line-height) + 15px); 
 
                 &::before {
                     content: '';
@@ -126,7 +130,7 @@
                     );
                     display: block;
                     width: 100%;
-                    margin: 5px auto 20px;
+                    margin: 15px auto 25px;
                     height: var(--header-border-height, var(--h2-border-height, 2px));
                 }
             }

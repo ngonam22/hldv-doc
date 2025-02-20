@@ -11,4 +11,4 @@ Toàn bộ nội dung trò chơi — bao gồm nhân vật, địa danh, sự ki
 
 import Tooltip from '@site/src/components/tooltips';
 
-Hover over this <Tooltip id="hello">keyword</Tooltip> to see the tooltip.
+Hover over this <Tooltip id="actions/attack">keyword</Tooltip> to see the tooltip.

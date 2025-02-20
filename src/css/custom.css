@@ -18,7 +18,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Bitter', serif;
   --ifm-font-family-monospace: 'Bitter', serif;
-  --ifm-heading-font-family: 'Daybreaker';
+  --ifm-heading-font-family: 'FzTogether';
 
   --orange-50: oklch(0.98 0.016 73.684);
   --orange-100: oklch(0.954 0.038 75.164);
@@ -140,4 +140,14 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2.2rem !important;
+}
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem !important;
+}
+.markdown > h3 {
+  --ifm-h2-font-size: 1.35rem !important;
 }

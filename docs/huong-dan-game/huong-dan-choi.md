@@ -1,6 +1,6 @@
 ---
 title: Hướng Dẫn Trò Chơi
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 ## Mục Tiêu Trò Chơi

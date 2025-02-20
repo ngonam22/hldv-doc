@@ -3,7 +3,7 @@ title: Giới Thiệu
 sidebar_position: 1
 ---
 
-## THUẬT THỨC (Techniques)
+## Thuật Thức (Techniques)
 
 Thuật thức là tên gọi chung của các chiêu thức và kỹ thuật đặc biệt mà nhân vật đạt được thông qua quá trình học tập và huấn luyện khắt khe, phổ biến nhất là thông qua quá trình đào tạo của các thế lực và môn phái trong nhân gian, và đại biểu nhất là Thập Nhị Thị Tộc của Đại Việt.
 

@@ -14,9 +14,13 @@ import {
   FloatingPortal
 } from "@floating-ui/react";
 import styles from './styles.module.scss';
+import AutoLayout from './AutoLayout';
 
 // Dynamically import all MD files from the tooltips directory
-const tooltipContext = require.context('../../../tooltips', false, /\.md$/);
+const tooltipContext = require.context('../../../tooltips', true, /\.md$/);
+
+
+
 
 const Tooltip = ({ id, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +42,7 @@ const Tooltip = ({ id, children }) => {
 
   try {
     const tooltipPath = `./${id}.md`;
-    const TooltipContent = tooltipContext(tooltipPath).default;
-
+    const { default: TooltipContent, frontMatter: metadata} = tooltipContext(tooltipPath);
 
     // Event listeners to change the open state
     const hover = useHover(context, { move: true });
@@ -81,7 +84,9 @@ const Tooltip = ({ id, children }) => {
             >
               <div className={styles.tooltipBg}></div>
               <div className={styles.tooltipContent}>
-                <TooltipContent />
+                <AutoLayout filePath={tooltipPath} metadata={metadata}>
+                  <TooltipContent />
+                </AutoLayout>
               </div>
             </div>
           )}
