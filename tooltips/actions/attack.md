@@ -1,12 +1,12 @@
 ---
 title: Tấn công
-titleIcon: "@site/static/img/icons/willpower-ability.png"
-hell2: false
+titleIcon: "/img/icons/attack.svg"
+brief: "Tấn công với vũ khí hoặc Tay không"
 layout: ActionBlock
-chiThanh: 2
-nguoiChoi: 1
+tinhTrang: "[Hành Động: Công Kích]"
 kiemTra: Võ Thuật
 doKho: 2
+phamVi: 1 đối tượng, phạm vi vũ khí
+thanhCong: Gây sát thương bằng với sát thương của vũ khí (+1/chí thành) lên đối tượng.
 ---
 
-*Tấn công với vũ khí hoặc Tay không.*

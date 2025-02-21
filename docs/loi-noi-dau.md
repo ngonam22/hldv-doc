@@ -8,7 +8,3 @@ Trò chơi Đại Việt Hắc Thế là trò chơi nhập vai giả tưởng nh
 Thông qua trang Web này, tất cả các thông tin cần thiết của trò chơi sẽ được truyền tải đến tất cả mọi người quan tâm.
 
 Toàn bộ nội dung trò chơi — bao gồm nhân vật, địa danh, sự kiện, và cốt truyện — đều là sản phẩm hư cấu từ trí tưởng tượng của tác giả. Không có yếu tố nào liên quan trực tiếp hay gián tiếp đến thực tế, kể cả những điểm trùng hợp ngoài ý muốn. Trò chơi được thiết kế chỉ dành cho mục đích giải trí và không đại diện cho bất kỳ tổ chức, quan điểm, hay sự kiện có thật nào.
-
-import Tooltip from '@site/src/components/tooltips';
-
-Hover over this <Tooltip id="actions/attack">keyword</Tooltip> to see the tooltip.

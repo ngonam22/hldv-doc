@@ -23,13 +23,18 @@ const tooltipContext = require.context('../../../tooltips', true, /\.md$/);
 
 
 const Tooltip = ({ id, children }) => {
+  // State to manage whether the tooltip is open
   const [isOpen, setIsOpen] = useState(false);
+  // State to track if the mouse is over the trigger (reference element)
+  const [isReferenceHovered, setIsReferenceHovered] = useState(false);
+  // State to track if the mouse is over the tooltip (floating element)
+  const [isFloatingHovered, setIsFloatingHovered] = useState(false);
+  // Ref to store the close timeout
+  const closeTimeoutRef = useRef(null);
 
-  const { refs, floatingStyles, context } = useFloating({
-    open: isOpen,
-    onOpenChange: setIsOpen,
+  // Floating UI setup for positioning the tooltip
+  const { refs, floatingStyles } = useFloating({
     placement: "top",
-    // Make sure the tooltip stays on the screen
     whileElementsMounted: autoUpdate,
     middleware: [
       offset(5),
@@ -40,24 +45,29 @@ const Tooltip = ({ id, children }) => {
     ]
   });
 
+  // Effect to manage the open state based on hover states
+  useEffect(() => {
+    if (isReferenceHovered || isFloatingHovered) {
+      // If either the trigger or tooltip is hovered, clear any close timeout and keep the tooltip open
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+        closeTimeoutRef.current = null;
+      }
+      setIsOpen(true);
+    } else {
+      // If neither is hovered, set a timeout to close the tooltip after 200ms
+      closeTimeoutRef.current = setTimeout(() => {
+        setIsOpen(false);
+        closeTimeoutRef.current = null;
+      }, 200);
+    }
+  }, [isReferenceHovered, isFloatingHovered]);
+
   try {
     const tooltipPath = `./${id}.md`;
     const { default: TooltipContent, frontMatter: metadata} = tooltipContext(tooltipPath);
 
-    // Event listeners to change the open state
-    const hover = useHover(context, { move: true });
-    const focus = useFocus(context);
-    const dismiss = useDismiss(context);
-    // Role props for screen readers
-    const role = useRole(context, { role: "tooltip" });
-
-    // Merge all the interactions into prop getters
-    const { getReferenceProps, getFloatingProps } = useInteractions([
-      hover,
-      focus,
-      dismiss,
-      role
-    ]);
+    
 
     if (!TooltipContent) {
       return <span>{children}</span>
@@ -68,7 +78,8 @@ const Tooltip = ({ id, children }) => {
         <span 
           className="tooltip-trigger" 
           ref={refs.setReference}
-          {...getReferenceProps()}
+          onMouseEnter={() => setIsReferenceHovered(true)}
+          onMouseLeave={() => setIsReferenceHovered(false)}
         >
           {children}
 
@@ -80,7 +91,25 @@ const Tooltip = ({ id, children }) => {
               className={styles.tooltipHolder}
               ref={refs.setFloating}
               style={floatingStyles}
-              {...getFloatingProps()}
+              onMouseEnter={() => {
+                // When entering the tooltip, set it as hovered and clear any close timeout
+                setIsFloatingHovered(true);
+                if (closeTimeoutRef.current) {
+                  clearTimeout(closeTimeoutRef.current);
+                  closeTimeoutRef.current = null;
+                }
+              }}
+              onMouseLeave={() => {
+                // When leaving the tooltip, set it as not hovered
+                setIsFloatingHovered(false);
+                // If the trigger is not hovered, close the tooltip immediately
+                if (!isReferenceHovered) {
+                  if (closeTimeoutRef.current) {
+                    clearTimeout(closeTimeoutRef.current);
+                  }
+                  setIsOpen(false);
+                }
+              }}
             >
               <div className={styles.tooltipBg}></div>
               <div className={styles.tooltipContent}>
