@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhldv_doc=self.webpackChunkhldv_doc||[]).push([[1903],{1912:l=>{l.exports=JSON.parse('{"blogBasePath":"/hldv-doc/blog","blogTitle":"Blog","authorsListPath":"/hldv-doc/blog/authors"}')}}]);
