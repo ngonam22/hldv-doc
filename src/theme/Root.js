@@ -80,6 +80,7 @@ const muiTheme = createTheme({
     },
     text: {
       primary: getDocusaurusVariables().text,
+      black: '#000000'
     },
   },
   // ... rest of theme config
