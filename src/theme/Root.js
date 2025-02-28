@@ -37,22 +37,36 @@ const getDocusaurusTheme = () => {
 // Default implementation, that you can customize
 export default function Root({children}) {
 
-    // Get theme mode from DOM attribute
-  const isDarkTheme = 
-  typeof document !== 'undefined' && 
-  document.documentElement.getAttribute('data-theme') === 'dark';
+// Get theme mode from DOM attribute
+const isDarkTheme = typeof document !== 'undefined' && document.documentElement.getAttribute('data-theme') === 'dark';
+// Define default light theme variables (matches Docusaurus defaults)
+const defaultThemeVariables = {
+  light: {
+    primary: '#3578e5',  // Docusaurus default primary blue
+    background: '#ffffff',  // White background
+    text: '#1a1a1a',  // Dark text
+    primaryDark: '#2b6cb0'  // Darker blue
+  },
+  dark: {
+    primary: '#25c2a0',  // Docusaurus dark mode primary
+    background: '#181920',  // Dark background
+    text: '#ffffff',  // White text
+    primaryDark: '#1f8974'  // Darker teal
+  }
+};
 
 // Get CSS variables (safe for SSR)
 const getDocusaurusVariables = () => {
   if (typeof window === 'undefined') {
-    return defaultLightVariables; // Fallback for SSR
+    return defaultThemeVariables.light; // Fallback for SSR
   }
   
   const rootStyles = getComputedStyle(document.documentElement);
   return {
-    primary: rootStyles.getPropertyValue('--ifm-color-primary'),
-    background: rootStyles.getPropertyValue('--ifm-background-color'),
-    text: rootStyles.getPropertyValue('--ifm-font-color-base'),
+    primary: rootStyles.getPropertyValue('--ifm-color-primary').trim(),
+    background: rootStyles.getPropertyValue('--ifm-background-color').trim(),
+    text: rootStyles.getPropertyValue('--ifm-font-color-base').trim(),
+    primaryDark: rootStyles.getPropertyValue('--ifm-color-primary-dark').trim() || defaultThemeVariables.light.primaryDark
   };
 };
 
