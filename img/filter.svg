@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+    <defs>
+        <filter id="edge">
+            <feTurbulence baseFrequency="0.1" numOctaves="5" type="fractalNoise" result="result1" />
+            <feDisplacementMap in2="result1" scale="6" result="result2" xChannelSelector="R" in="SourceGraphic" />
+        </filter>
+    </defs>
+    
+</svg>
