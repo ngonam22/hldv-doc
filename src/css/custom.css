@@ -128,6 +128,8 @@
   --sky-800: oklch(0.443 0.11 240.79);
   --sky-900: oklch(0.391 0.09 240.876);
   --sky-950: oklch(0.293 0.066 243.157);
+
+  --mui-palette-background-paper: var(--zinc-400) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
